@@ -1,14 +1,16 @@
-
 const userPersonalData = {
   name: 'peter',
   age: '56',
   birthday: 'jan 1st',
- };
- const userGameData = {
+};
+const userGameData = {
   score: 4546,
-  accomplishments: ['won award for being good gamer', 'won 1st win', 'got good score on the weekend'],
- };
-  
+  accomplishments: [
+    'won award for being good gamer',
+    'won 1st win',
+    'got good score on the weekend',
+  ],
+};
 
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 1. Combine the personalData and userGameData into a user object that is equal to the object below, by using the spread operator:
@@ -21,19 +23,19 @@ const userPersonalData = {
 // }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
+const user = { ...userPersonalData, ...userGameData };
+console.log(user);
 
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 2. Make a copy of your new user object but overrode the birthday to december 31st
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- 
+
+const userAlt = { ...user, birthday: 'december 31st' };
+console.log(userAlt);
 
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 3. Use the spread operator to make a copy of the accomplishments array and store it i na new variable
+// 3. Use the spread operator to make a copy of the accomplishments array and store it in a new variable
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- 
+
+const accomplishments = { ...user.accomplishments };
+console.log(accomplishments);

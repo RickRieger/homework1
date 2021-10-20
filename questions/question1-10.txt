@@ -2,23 +2,44 @@ Questionnaire:
 
 1. What are javascript functions?
 
+Javascript function is an entity that performs a task (a set of instructions) and takes in argument(s), and returns a result.  
+
 2. Explain call-back functions in your own words.
+
+A callback function is a function passed to another function as an argument, then executed inside that function. 
 
 3. Why are javascript functions first-class citizens? (in your own words, please)
 
+Because the functions are treated the same as any other object in that they can be stored inside variables, passed as arguments, and returned from other functions as a result. 
+
 4. Explain javascript Closures in your own words.
+
+This is kind of a tricky one to explain :)  
+JS Closures occur when a function is stored inside another function remembers variables in the local scope of things, even after the outer function is executed.     
 
 5. When/Why do you use the .then() method of a promise?
 
+To give instruction of what to do after the promise is executed.  
+
 6. When/Why do you use the .catch() method of a promise?
 
+This will catch any errors that may occur to prevent the promise from returning a value/data.
+
 7. What is the spread operator?
+
+The spread operator (...) is used with strings, arrays and objects to join, manipulate and iterate through in a clean syntactical way. It essentially "spreads them out" or "expands". ES6 baby...
 
 
 8. What is the rest operator?
 
+Similar to the spread operator, however,  it is used to gather all the values passed into an argument when you do not know how many values will be passed. This rest operator can be used in conjunction with separate arguments as well as long as the rest operator is at the end.  
 
-9. What is the difference between the rest operator and the spead operator?
+
+9. What is the difference between the rest operator and the spread operator?
+
+Spread operator separates values while the rest operator gathers values. 
 
 
 10. What is Object and Array Destructuring in javascript?
+
+This is a short-hand way of gathering values within the Array or Object for cleaner looking code. 
